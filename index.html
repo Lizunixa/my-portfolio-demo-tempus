@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TEMPUS — учебный концепт интернет-магазина часов. Демонстрация интерфейса на HTML, CSS и JavaScript.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>TEMPUS — часы премиум-класса</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a href="#hero" class="logo" aria-label="TEMPUS — на главную">TEMPUS</a>
+  <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="primary-navigation" class="site-nav">
+    <ul>
+      <li><a href="#hero">Главная</a></li>
+      <li><a href="#catalog">Каталог</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+  <a href="cart.html" class="cart-btn">
+  Корзина (<span id="cart-count">0</span>)
+</a>
+</header>
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <span class="tag">Концепт интернет-магазина</span>
+    <h1>Время —<br>это <span>искусство</span></h1>
+    <p>
+      Концептуальная подборка культовых моделей и лаконичный интерфейс,
+      созданные для демонстрации дизайна и возможностей веб-разработки.
+    </p>
+    <a href="#catalog" class="btn-primary">Смотреть коллекцию</a>
+  </div>
+
+  <div class="watch-wrapper">
+    <div class="watch">
+      <div class="hand hour"></div>
+      <div class="hand minute"></div>
+      <div class="hand second"></div>
+      <div class="center-dot"></div>
+    </div>
+  </div>
+</section>
+<section class="catalog" id="catalog">
+  <div class="section-title">
+    <span class="tag">Избранное</span>
+    <h2>Наши <span>часы</span></h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="card-img">
+        <img src="image/Aurum.jpg" alt="Карточка 1" class="watch-photo" loading="lazy" decoding="async">
+      </div>
+      <div class="card-info">
+        <div class="brand">Бренд</div>
+        <h3>Описание</h3>
+        <div class="price-row">
+          <span class="price">1 250 000 ₽</span>
+          <button class="buy-btn" data-action="add" data-id="1">В корзину</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="image/Prestige.jpg" alt="Карточка 2" class="watch-photo" loading="lazy" decoding="async">
+      </div>
+      <div class="card-info">
+        <div class="brand">Бренд</div>
+        <h3>Описание</h3>
+        <div class="price-row">
+          <span class="price">680 000 ₽</span>
+          <button class="buy-btn" data-action="add" data-id="2">В корзину</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="image/Chrono.jpg" alt="Карточка 3" class="watch-photo" loading="lazy" decoding="async">
+      </div>
+      <div class="card-info">
+        <div class="brand">Бренд</div>
+        <h3>Описание</h3>
+        <div class="price-row">
+          <span class="price">4 900 000 ₽</span>
+          <button class="buy-btn" data-action="add" data-id="3">В корзину</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="image/Royal.jpg" alt="Карточка 4" class="watch-photo" loading="lazy" decoding="async">
+      </div>
+      <div class="card-info">
+        <div class="brand">Бренд</div>
+        <h3>Описание</h3>
+        <div class="price-row">
+          <span class="price">3 200 000 ₽</span>
+          <button class="buy-btn" data-action="add" data-id="4">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contacts" id="contacts">
+  <div class="section-title">
+    <span class="tag">Демонстрация интерфейса</span>
+    <h2>Обратная <span>связь</span></h2>
+  </div>
+
+  <div class="contacts-grid">
+           <div class="contact-info">
+      <h3>О проекте TEMPUS</h3>
+      <div class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M8 12h8M12 8v8"/>
+        </svg>
+        <p><strong>Формат</strong>Учебный концепт интернет-магазина</p>
+      </div>
+      <div class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16" rx="2"/>
+          <path d="m7 8 5 4 5-4"/>
+        </svg>
+        <p><strong>Обратная связь</strong>Форма работает в демонстрационном режиме и не отправляет сообщения.</p>
+      </div>
+      <div class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M8 16l8-8M8 8h.01M16 16h.01"/>
+        </svg>
+        <p><strong>Статус</strong>Портфолио-проект. Не является действующим магазином.</p>
+      </div>
+    </div>
+
+    <form id="contact-form" aria-label="Демонстрационная форма обратной связи">
+  <p class="form-demo-note">Демонстрационная форма: данные не отправляются и не сохраняются.</p>
+  <label class="visually-hidden" for="contact-name">Ваше имя</label>
+  <input id="contact-name" type="text" name="name" placeholder="Ваше имя" required>
+  <label class="visually-hidden" for="contact-email">Email</label>
+  <input id="contact-email" type="email" name="email" placeholder="Email" autocomplete="email" required>
+  <label class="visually-hidden" for="contact-message">Сообщение</label>
+  <textarea id="contact-message" name="message" placeholder="Сообщение" required></textarea>
+  
+  <button type="submit" class="btn-primary">Проверить форму</button>
+</form>
+  </div>
+</section>
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#hero" class="logo">TEMPUS</a>
+      <p>Учебный концепт магазина часов, созданный для портфолио. Не является коммерческим предложением.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Магазин</h4>
+      <ul>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#catalog">Подборка моделей</a></li>
+        <li><a href="#hero">О проекте</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Помощь</h4>
+      <ul>
+        <li><a href="#contacts">Демонстрационная форма</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Соцсети</h4>
+      <p class="footer-muted">Социальные сети не подключены — это демонстрационный проект.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 TEMPUS — учебный проект. Все названия брендов вымышлены.
+    Изображения часов сгенерированы искусственным интеллектом и не являются фотографиями реальных продуктов.
+  </div>
+</footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
